@@ -1,0 +1,34 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-car" [class.blue-icon]="Placa.valid" [class.red-icon]="Placa.invalid && Placa.touched"></i>
+                </div>
+            </div>
+            <input name="Placa" #Placa="ngModel" [(ngModel)]="service.Placa" type="text" class="form-control" placeholder="Placa (AAA0000)" required maxlength="7" minlength="7" >
+        </div>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid">
+            <i class="fas fa-search"></i>
+            Consultar
+        </button>
+    </div>
+</form>
+
+
+<div *ngIf="service.list">
+    <hr>
+    <div>     
+      <h2>Informações do Veículo</h2><hr>
+      <h4>Placa: {{ service.list.Placa.substring(0,3) }}-{{ service.list.Placa.substring(3,8) }}</h4>
+      <h5>Proprietário: {{ service.list.Proprietario }}</h5>
+      <p>Registro de Roubo: {{service.list.Veiculo_Roubado == true ? "Sim" : "Não"}}</p>
+      <p> Ano Fabricação: {{ service.list.Ano_Fabricacao }}</p>
+      <p> Ano Modelo: {{ service.list.Ano_Modelo }}</p>
+    </div>
+</div>
+<div *ngIf="service.list != null && Placa.touched">
+    Veículo não encontrado
+</div>

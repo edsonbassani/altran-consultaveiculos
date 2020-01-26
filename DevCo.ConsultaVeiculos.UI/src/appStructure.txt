@@ -1,0 +1,12 @@
+src
+    app
+        veiculos-detalhes
+            veiculo-detalhes.component.ts|.html|.css
+                veiculo-detalhe
+                    veiculos-detalhe.component.ts|.html|.css
+                shared
+                    veiculos-detalhe.service.ts
+                    veiculos.detalhe.model.ts
+    app.module.ts
+
+index.html
