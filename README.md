@@ -9,6 +9,7 @@ O objetivo deste código-fonte é implementar as seguintes características:
     - DotNet core 3.1.1
     - Entity Framework Core 
     - xUnit (Testes Unitários)
+    - Redirecionamento https
     
   
 **Características Técnicas**
