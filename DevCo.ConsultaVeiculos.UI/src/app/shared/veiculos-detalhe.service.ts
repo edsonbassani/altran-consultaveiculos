@@ -16,13 +16,12 @@ export class VeiculosDetalheService {
 
   postConsultarVeiculo(formData:VeiculosDetalhe){
    const headers = new HttpHeaders().set('content-type', 'application/json');
-   this.http.post(this.rootURL + '/consulta-placa/', JSON.stringify(new String(formData.Placa)), {headers})
+   this.http.post(this.rootURL + '/consulta-placa/', JSON.stringify(formData), {headers})
    .toPromise().
    then(res => 
     this.list = res as VeiculosDetalhe[], 
     err => this.list = null
     );
  }
-
 }
  
