@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using DevCo.ConsultaVeiculos.WebAPI.Models;
 using System.Text.RegularExpressions;
+using Newtonsoft.Json.Linq;
 
 namespace DevCo.ConsultaVeiculos.WebAPI.Controllers
 {
@@ -25,14 +26,14 @@ namespace DevCo.ConsultaVeiculos.WebAPI.Controllers
         [HttpPost]
         [Route("consulta-placa")]
         [Consumes("application/json")]
-        public async Task<ActionResult<Veiculos>> PostVeiculos([FromBody] string Placa)
+        public async Task<ActionResult<Veiculos>> PostVeiculos([FromBody] JObject Placa)
         {
-            if(!Regex.IsMatch(Placa, "[A-Za-z]{3}[0-9]{4}"))
+            if (!Regex.IsMatch(Placa.GetValue("Placa").ToString(), "[A-Za-z]{3}[0-9]{4}"))
             {
                 return BadRequest();
             }
 
-            var veiculo = await _context.Veiculos.SingleOrDefaultAsync(v => v.Placa.ToUpper() == Placa);
+            var veiculo = await _context.Veiculos.SingleOrDefaultAsync(v => v.Placa.ToUpper() == Placa.GetValue("Placa").ToString().ToUpper());
 
             if (veiculo == null)
             {

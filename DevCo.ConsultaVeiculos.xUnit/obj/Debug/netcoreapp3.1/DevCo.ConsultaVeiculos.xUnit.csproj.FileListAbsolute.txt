@@ -231,3 +231,4 @@ E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.xUnit\obj
 E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.xUnit\obj\Debug\netcoreapp3.1\DevCo.ConsultaVeiculos.xUnit.dll
 E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.xUnit\obj\Debug\netcoreapp3.1\DevCo.ConsultaVeiculos.xUnit.pdb
 E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.xUnit\obj\Debug\netcoreapp3.1\DevCo.ConsultaVeiculos.xUnit.csprojAssemblyReference.cache
+E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.xUnit\bin\Debug\netcoreapp3.1\DevCo.ConsultaVeiculos.WebAPI.pdb

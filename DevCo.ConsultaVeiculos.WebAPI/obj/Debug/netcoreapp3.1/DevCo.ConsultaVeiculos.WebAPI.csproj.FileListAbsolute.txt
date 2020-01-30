@@ -143,3 +143,4 @@ E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.WebAPI\ob
 E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.WebAPI\obj\Debug\netcoreapp3.1\DevCo.ConsultaVeiculos.WebAPI.csproj.CopyComplete
 E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.WebAPI\obj\Debug\netcoreapp3.1\DevCo.ConsultaVeiculos.WebAPI.dll
 E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.WebAPI\obj\Debug\netcoreapp3.1\DevCo.ConsultaVeiculos.WebAPI.pdb
+E:\PROJECTS\Altran\DevCo\DevCo.ConsultaVeiculos\DevCo.ConsultaVeiculos.WebAPI\bin\Debug\netcoreapp3.1\DevCo.ConsultaVeiculos.WebAPI.pdb
